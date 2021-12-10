@@ -20,7 +20,7 @@ const post = [
         imgPost: 'https://unsplash.it/600/300?image=171',
         miPiace: 'Mi Piace',
         piace: 'piace a',
-        numeroMiPiace: 0,
+        numeroMiPiace: 80,
         persone: 'persone',
     },
     {
@@ -31,16 +31,7 @@ const post = [
         imgPost: 'https://i.picsum.photos/id/281/600/300.jpg?hmac=WOWGvOOU_7C-3QDpIPw-coro7Pe4BaZGrPht2VbG5qg',
         miPiace: 'Mi Piace',
         piace: 'piace a',
-        numeroMiPiace: 0,
-        persone: 'persone',
-    },
-    {
-        utente: 'Ulisse',
-        tempo: '4 mesi fa',
-        text: 'Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias.',
-        miPiace: 'Mi Piace',
-        piace: 'piace a',
-        numeroMiPiace: 0,
+        numeroMiPiace: 200,
         persone: 'persone',
     },
     {
@@ -51,14 +42,21 @@ const post = [
         imgPost: 'https://i.picsum.photos/id/416/600/300.jpg?hmac=aqFBkyQE8_zJEJ9bxWr-TwYR24-viV3kvoWa1XgvjbY',
         miPiace: 'Mi Piace',
         piace: 'piace a',
-        numeroMiPiace: 0,
+        numeroMiPiace: 80,
         persone: 'persone',
     },
-    
+    {
+        imgUtente: 'https://i.picsum.photos/id/839/300/300.jpg?hmac=_3qtl641-KhyDcOcpQjTRl8MbB0sES_OBhau2yUoRAE',
+        utente: 'Electra Coin',
+        tempo: '4 mesi fa',
+        text: 'Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias.',
+        imgPost: 'https://images.unsplash.com/photo-1605792657660-596af9009e82?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE5fE94eW50Sm9CREZZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
+        miPiace: 'Mi Piace',
+        piace: 'piace a',
+        numeroMiPiace: 80,
+        persone: 'persone',
+    },
 ];
-
-
-
 
 const postContainer = document.getElementById('container');
 
@@ -70,7 +68,7 @@ for (let i = 0; i < post.length; i++) {
             <div class="post__header">
                 <div class="post-meta">                    
                     <div class="post-meta__icon">
-                        <img class="profile-pic" src="${object.imgUtente}" alt="">                    
+                        <img class="profile-pic" src="${object.imgUtente}" alt="Phil Mangione">                    
                     </div>
                     <div class="post-meta__data">
                         <div class="post-meta__author">${object.utente}</div>
@@ -100,3 +98,6 @@ for (let i = 0; i < post.length; i++) {
   postContainer.innerHTML += scheda;
 }
 
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
