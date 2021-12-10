@@ -20,7 +20,7 @@ const post = [
         imgPost: 'https://unsplash.it/600/300?image=171',
         miPiace: 'Mi Piace',
         piace: 'piace a',
-        numeroMiPiace: 80,
+        numeroMiPiace: 100,
         persone: 'persone',
     },
     {
@@ -31,7 +31,7 @@ const post = [
         imgPost: 'https://i.picsum.photos/id/281/600/300.jpg?hmac=WOWGvOOU_7C-3QDpIPw-coro7Pe4BaZGrPht2VbG5qg',
         miPiace: 'Mi Piace',
         piace: 'piace a',
-        numeroMiPiace: 200,
+        numeroMiPiace: 77,
         persone: 'persone',
     },
     {
@@ -42,7 +42,7 @@ const post = [
         imgPost: 'https://i.picsum.photos/id/416/600/300.jpg?hmac=aqFBkyQE8_zJEJ9bxWr-TwYR24-viV3kvoWa1XgvjbY',
         miPiace: 'Mi Piace',
         piace: 'piace a',
-        numeroMiPiace: 80,
+        numeroMiPiace: 25,
         persone: 'persone',
     },
     {
@@ -53,7 +53,7 @@ const post = [
         imgPost: 'https://images.unsplash.com/photo-1605792657660-596af9009e82?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE5fE94eW50Sm9CREZZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
         miPiace: 'Mi Piace',
         piace: 'piace a',
-        numeroMiPiace: 80,
+        numeroMiPiace: 230,
         persone: 'persone',
     },
 ];
@@ -98,6 +98,27 @@ for (let i = 0; i < post.length; i++) {
   postContainer.innerHTML += scheda;
 }
 
-function getRndInteger(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+
+
+let button = document.querySelector('.js-like-button');
+let contatore = document.getElementById('like-counter-1');
+
+for (let i = 0; i < post.length; i++) {
+    const element = post[i];
+    console
+    
 }
+
+
+
+
+ button.addEventListener ('click', function(){
+    console.log('ciao')
+ }); 
+
+
+
+
+
+
+
