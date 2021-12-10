@@ -15,48 +15,50 @@ const post = [
     {
         imgUtente: 'https://unsplash.it/300/300?image=15',
         utente: 'Phil Mangione',
-        tempo: '4 mesi fa',
+        tempo: '05/09/2021',
         text: 'Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias.',
         imgPost: 'https://unsplash.it/600/300?image=171',
         miPiace: 'Mi Piace',
         piace: 'piace a',
-        numeroMiPiace: 80,
+        numeroMiPiace: 0,
         persone: 'persone',
     },
     {
-        imgUtente: 'https://unsplash.it/300/300?image=15',
-        utente: 'Phil Mangione',
-        tempo: '4 mesi fa',
+        imgUtente: 'https://i.picsum.photos/id/1025/300/300.jpg?hmac=4Y_I-JXDyweKiXCJHr7qYyF8RwfblAka9dd1ooCY1fY',
+        utente: 'Dino Cagnolino',
+        tempo: '10/12/2021',
         text: 'Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias.',
-        imgPost: 'https://unsplash.it/600/300?image=171',
+        imgPost: 'https://i.picsum.photos/id/281/600/300.jpg?hmac=WOWGvOOU_7C-3QDpIPw-coro7Pe4BaZGrPht2VbG5qg',
         miPiace: 'Mi Piace',
         piace: 'piace a',
-        numeroMiPiace: 80,
+        numeroMiPiace: 0,
         persone: 'persone',
     },
     {
-        imgUtente: 'https://unsplash.it/300/300?image=15',
-        utente: 'Phil Mangione',
+        utente: 'Ulisse',
         tempo: '4 mesi fa',
         text: 'Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias.',
-        imgPost: 'https://unsplash.it/600/300?image=171',
         miPiace: 'Mi Piace',
         piace: 'piace a',
-        numeroMiPiace: 80,
+        numeroMiPiace: 0,
         persone: 'persone',
     },
     {
-        imgUtente: 'https://unsplash.it/300/300?image=15',
-        utente: 'Phil Mangione',
+        imgUtente: 'https://i.picsum.photos/id/944/300/300.jpg?hmac=lHUGD_YGKUze5GyzrN6yuqmk0TuGuaQoI0fsbV-nDZY',
+        utente: 'Vito Adventure',
         tempo: '4 mesi fa',
         text: 'Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto. Et nihil ullam aut alias.',
-        imgPost: 'https://unsplash.it/600/300?image=171',
+        imgPost: 'https://i.picsum.photos/id/416/600/300.jpg?hmac=aqFBkyQE8_zJEJ9bxWr-TwYR24-viV3kvoWa1XgvjbY',
         miPiace: 'Mi Piace',
         piace: 'piace a',
-        numeroMiPiace: 80,
+        numeroMiPiace: 0,
         persone: 'persone',
     },
+    
 ];
+
+
+
 
 const postContainer = document.getElementById('container');
 
@@ -68,7 +70,7 @@ for (let i = 0; i < post.length; i++) {
             <div class="post__header">
                 <div class="post-meta">                    
                     <div class="post-meta__icon">
-                        <img class="profile-pic" src="${object.imgUtente}" alt="Phil Mangione">                    
+                        <img class="profile-pic" src="${object.imgUtente}" alt="">                    
                     </div>
                     <div class="post-meta__data">
                         <div class="post-meta__author">${object.utente}</div>
@@ -97,3 +99,4 @@ for (let i = 0; i < post.length; i++) {
   `;
   postContainer.innerHTML += scheda;
 }
+
