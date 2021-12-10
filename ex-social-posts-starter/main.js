@@ -96,25 +96,29 @@ for (let i = 0; i < post.length; i++) {
         </div>
   `;
   postContainer.innerHTML += scheda;
+  
 }
 
 
+let button = document.querySelectorAll('.like-button');
+let counter = document.querySelectorAll('.js-likes-counter');
 
-let button = document.querySelector('.js-like-button');
-let contatore = document.getElementById('like-counter-1');
-
-for (let i = 0; i < post.length; i++) {
-    const element = post[i];
-    console
+for (let index = 0; index < button.length; index++) {
+    button[index].addEventListener ('click', function(){
+    button[index].classList.toggle("like-button--liked");
+    counter[index].innerHTML = post[index].numeroMiPiace + 1;
+    });    
+    
     
 }
 
 
 
 
- button.addEventListener ('click', function(){
-    console.log('ciao')
- }); 
+
+
+
+
 
 
 
